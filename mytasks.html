@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./task.css">
+    <title>taskup</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./assets/TASKUPlogo.svg" alt="Logo">
+        </div>
+        <nav>
+
+            <ul>
+                <li>
+                    <a class="nav-link " href="./task.html"> 
+                     <img class="nav-icon" src="./assets/Vector.svg" alt=""> <span class="nav-text ">Dashboard</span> 
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link highlight" href="#"> 
+                     <img class="nav-icon" src="./assets/my tasks (1).svg" alt=""> <span class="nav-text selected">my tasks</span> 
+                    </a>
+                </li><li>
+                    <a class="nav-link" href="#"> 
+                     <img class="nav-icon" src="./assets/Vector-1.svg" alt=""> <span class="nav-text">team info</span> 
+                    </a>
+                </li><li>
+                    <a class="nav-link" href="#"> 
+                     <img class="nav-icon" src="./assets/Vector-3.svg" alt=""> <span class="nav-text">integration</span> 
+                    </a>
+                </li><li>
+                    <a class="nav-link" href="#"> 
+                     <img class="nav-icon" src="./assets/Vector-5.svg" alt=""> <span class="nav-text">Remainders</span> 
+                    </a>
+                </li><li>
+                    <a class="nav-link" href="#"> 
+                     <img class="nav-icon" src="./assets/Vector-2.svg" alt=""> <span class="nav-text">Messaging</span> 
+                    </a>
+                </li>
+
+            </ul>
+            <ul>
+                <li >
+                    <a class="nav-link" href="#"> 
+                    <img class="nav-icon" src="./assets/setting.svg" alt=""> <span class="nav-text">settings</span> 
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="main">
+        <div class="topbar">
+            <ul>
+                <select id="dropdown">
+                    <option value="option1" selected>Project one</option>
+                    <option value="option2">project two</option>
+                    <option value="option3" >project three</option>
+                    <option value="option4">project four</option>
+                </select>
+            </ul>
+            <div class="account">
+                <img src="./assets/Ellipse 826.png" alt="">
+                <div class="account-info">
+                    <p class="name">Karthik yadav</p>
+                    <p class="tsk-update-title">project manager</p>
+                </div>
+            </div>
+        </div>
+        <div class="mytask-cont">
+            <ul>
+                <select id="dropdown">
+                    <option value="option1" selected>Open tasks </option>
+                    <option value="option2">Action needed tasks</option>
+                    <option value="option3" >Over due tasks</option>
+                    <option value="option4">On hold tasks</option>
+                    <option value="option5">Unassigned tasks</option>
+                    <option value="option6">Completed tasks</option>
+                </select>
+            </ul>
+            <img class="filter-icon"  src="./assets/Filter.svg" alt="">
+            <div class="my-tasks">
+                <div class="tasks mine">
+
+                    <div class="tsk sel">
+                        <h4 class="tsk-title">User testing  </h4>
+                        <div class="tsk-status">
+                        <div class="progress-bar">
+                            <div class="progress" ></div>
+                          </div>
+                          <div class="due-date"><img src="./assets/due date.svg" alt=""> 1 day</div>
+                        </div>
+                        <p class="tsk-update-title">Task update</p>
+                        <p class="tsk-update">summarizing </p>
+                        
+                    </div>
+                    <!-- <div class="divider"></div> -->
+            
+                    <div class="tsk">
+                        <h4 class="tsk-title">CTA design  </h4>
+                        <div class="tsk-status">
+                            <div class="progress-bar">
+                                <div class="progress" ></div>
+                              </div>
+                              <div class="due-date"><img src="./assets/due date.svg" alt=""> 1 day</div>
+                            </div>
+                        <p class="tsk-update-title">Task update</p>
+                        <p class="tsk-update">referred design system</p>
+                        
+                    </div>
+                    <div class="tsk">
+                        <h4 class="tsk-title">Home page refresh </h4>
+                        <div class="tsk-status">
+                            <div class="progress-bar">
+                                <div class="progress" ></div>
+                              </div>
+                              <div class="due-date"><img src="./assets/due date.svg" alt=""> 1 day</div>
+                            </div>
+                        <p class="tsk-update-title">Task update</p>
+                        <p class="tsk-update">referred design system</p>
+                        
+                    </div>
+                    <div class="tsk">
+                        <h4 class="tsk-title">Color match  </h4>
+                        <div class="tsk-status">
+                            <div class="progress-bar">
+                                <div class="progress" ></div>
+                              </div>
+                              <div class="due-date"><img src="./assets/due date.svg" alt=""> 1 day</div>
+                            </div>
+                        <p class="tsk-update-title">Task update</p>
+                        <p class="tsk-update">referred design system</p>
+                        
+                    </div>
+                </div>
+                <div class="task-detail">
+                    <h3 class="cd-hdg">
+                       User testing
+                    </h3>
+                    <p class="task-disc">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentes sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus..
+                    </p>
+                    <p class="task-disc">Assigned by - <b style="font-weight: 500;">self assigned</b> </p>
+                    <div style="display: flex; align-items: center; gap: 10px;" class="priority-tag">
+                        <Div  class="dot"></Div>
+                        <span class="pr">High Priority</span>
+                    </div>
+                </div>
+
+                <div class="progress-bars">
+                <div class="progress-bar-cont">
+                    <div class="duedate-cont progress-bar">
+                        <div class="duedate progress"></div>
+                    </div>
+                    <div class="work-progress-cont">
+                    <div class="work-cont progress-bar">
+                        <div class="work progress">
+                            <div class="slider">
+                                <div class="in-slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-text-cont">
+                        <p class="update-text">Started</p>
+                        <p class="update-text">planning</p>
+                        <p class="update-text">summarizing</p>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="duedate-indicator">
+                        <p class="deadline"> Deadline </p>
+                        <p class="days">5</p>
+                        <p class="days-left">Days left</p>
+
+                    </div>
+                </div>
+                <form class="update-form" action="">
+                    <input placeholder="Add new task status update" type="text" class="input" name="" id="task-title">
+                    <button class="update">Update</button>
+    
+                </form>
+            </div>
+        </div>
+    
+
+
+
+
+    
+
+    </div>
+
+</body>
+<script src="./task.js"></script>
+</html>

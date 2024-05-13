@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./task.css">
+    <title>taskup</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./assets/TASKUPlogo.svg" alt="Logo">
+        </div>
+        <nav>
+
+            <ul>
+                <li>
+                    <a class="nav-link highlight" href="#"> 
+                     <img class="nav-icon" src="./assets/Dashboard.svg" alt=""> <span class="nav-text selected">Dashboard</span> 
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./mytasks.html"> 
+                     <img class="nav-icon" src="./assets/my tasks.svg" alt=""> <span class="nav-text">my tasks</span> 
+                    </a>
+                </li><li>
+                    <a class="nav-link" href="#"> 
+                     <img class="nav-icon" src="./assets/Vector-1.svg" alt=""> <span class="nav-text">team info</span> 
+                    </a>
+                </li><li>
+                    <a class="nav-link" href="#"> 
+                     <img class="nav-icon" src="./assets/Vector-3.svg" alt=""> <span class="nav-text">integration</span> 
+                    </a>
+                </li><li>
+                    <a class="nav-link" href="#"> 
+                     <img class="nav-icon" src="./assets/Vector-5.svg" alt=""> <span class="nav-text">Remainders</span> 
+                    </a>
+                </li><li>
+                    <a class="nav-link" href="#"> 
+                     <img class="nav-icon" src="./assets/Vector-2.svg" alt=""> <span class="nav-text">Messaging</span> 
+                    </a>
+                </li>
+
+            </ul>
+            <ul>
+                <li >
+                    <a class="nav-link" href="#"> 
+                    <img class="nav-icon" src="./assets/setting.svg" alt=""> <span class="nav-text">settings</span> 
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="main">
+    <div class="topbar">
+        <ul>
+            <select id="dropdown">
+                <option value="option1" selected>Project one</option>
+                <option value="option2">project two</option>
+                <option value="option3" >project three</option>
+                <option value="option4">project four</option>
+            </select>
+        </ul>
+        <div class="account">
+            <img src="./assets/Ellipse 826.png" alt="">
+            <div class="account-info">
+                <p class="name">Karthik yadav</p>
+                <p class="tsk-update-title">project manager</p>
+            </div>
+        </div>
+    </div>
+    <div class="section one">
+        <div class="first card">
+            <h3 class="cd-hdg">
+                Priority task status
+            </h3>
+            <div class="tasks">
+
+                <div class="tsk">
+                    <h4 class="tsk-title">User testing  </h4>
+                    <div class="tsk-status">
+                    <div class="progress-bar">
+                        <div class="progress" ></div>
+                      </div>
+                      <div class="due-date"><img src="./assets/due date.svg" alt=""> 1 day</div>
+                    </div>
+                    <p class="tsk-update-title">Task update</p>
+                    <p class="tsk-update">summarizing observations</p>
+                    
+                </div>
+                <div class="divider"></div>
+                <div class="tsk">
+                    <h4 class="tsk-title">CTA design  </h4>
+                    <div class="tsk-status">
+                        <div class="progress-bar">
+                            <div class="progress" ></div>
+                          </div>
+                          <div class="due-date"><img src="./assets/due date.svg" alt=""> 1 day</div>
+                        </div>
+                    <p class="tsk-update-title">Task update</p>
+                    <p class="tsk-update">referred design system</p>
+                    
+                </div>
+            </div>
+            <div class="view-all">View all</div>
+        </div>
+        <div class="second card">
+            <h3 class="cd-hdg">
+                Action needed tasks
+            </h3>
+            <div class="tasks">
+
+                <div class="tsk">
+                    <h4 class="tsk-title">Republic day posters  </h4>
+                    <div class="tsk-status">
+                    <div class="progress-bar" style="background-color: #6FBB80;">
+                        <div class="progress" style="display: none;" ></div>
+                      </div>
+                      <div class="due-date"><img style="width: 24px;" src="./assets/done.svg" alt=""></div>
+                    </div>
+                    <p class="tsk-update-title">Action</p>
+                    <p class="tsk-update">Close task</p>
+                    
+                </div>
+                <div class="divider"></div>
+                
+                <div class="tsk">
+                    <h4 class="tsk-title">home page refresh  </h4>
+                    <div class="tsk-status">
+                        <div class="progress-bar">
+                            <div class="progress" ></div>
+                          </div>
+                          <div class="due-date"><img src="./assets/due date.svg" alt=""> 1 day</div>
+                        </div>
+                    <p class="tsk-update-title">Action</p>
+                    <p class="tsk-update">Extend deadline</p>
+                    
+                </div>
+            </div>
+            <div class="view-all">View all</div>
+
+        </div>
+    </div>
+    <div class="section two">
+        <div  class="card">
+            <h3 class="cd-hdg">
+                On-time completion rate
+            </h3>
+            <img class="complition-graph" src="./assets/complition graph.svg" alt="">
+        </div>
+        <div  class="card">
+            <h3 class="cd-hdg">
+                Individual work load
+            </h3>
+            <div class="ind-cont-content">
+                <img style="width: 125%; padding: 20px; " src="./assets/pie-chart.svg" alt="">
+                <ul style="width: 300px;" class="contributers">
+                    <li>
+                        <div style="background-color: #E0DEF7;" class="refer"></div>
+                        <p>Kiran</p>
+                    </li>
+                    <li>
+                        <div style="background-color: #F7DEDE;" class="refer"></div>
+                        <p >Karthik</p>
+                    </li><li>
+                        <div style="background-color: #DAF1F8;" class="refer"></div>
+                        <p>krupa</p>
+                    </li><li>
+                        <div style="background-color: #F5DFF4;" class="refer"></div>
+                        <p>jyothi k</p>
+                    </li><li>
+                        <div style="background-color: #FBEFD9;" class="refer"></div>
+                        <p>ayush</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div  class="card">
+            <h3 class="cd-hdg">
+                Assigning suggestion
+            </h3>
+            <table>
+                <tr>
+                    <td>research</td>
+                    <td style="width: 160px;" class="tab2">
+                        <img src="./assets/done.svg" style="position: absolute; transform: translate(28px, -10px); width: 15px;" alt="">
+                        <img src="./assets/Group 3203.svg" alt="">
+                        <p>Krupa</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>competitive anay...</td>
+                    <td style="width: 160px;" class="tab2">
+                        <img src="./assets/done.svg" style="position: absolute; transform: translate(28px, -10px); width: 15px;" alt="">
+                        <img src="./assets/Group 3204.svg" alt="">  <p>pavan</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>design review</td>
+                    <td style="width: 160px;" class="tab2"><img src="./assets/Group 3205.svg" alt=""><p>Harshith</p></td>
+                </tr>
+                <tr>
+                    <td>poster design</td>
+                    <td style="width: 160px;" class="tab2"><img src="./assets/Group 3206.svg" alt=""><p>Kiran pas</p></td>
+                </tr>
+                <tr>
+                    <td>strategy planning</td>
+                    <td style="width: 160px;" class="tab2"><img src="./assets/Group 3207.svg" alt=""><p>jyothi k</p></td>
+                </tr>
+            </table>            
+        </div>
+    </div>
+
+    <div class="section three">
+        <div class="card">
+            <h3 style="text-align: center; padding-left: 0;" class="cd-hdg">
+                Unassigned tasks
+            </h3>
+            <div class="total-tasks">3</div>
+            <div class="detailed-task-cont">
+               <span class="detailed-task" >
+                2 <br><p style="font-size: 14px;">small tasks</p>
+               </span>
+               <div style="height: 40px;" class="divider"></div>
+               <span class="detailed-task" >
+                1 <br><p style="font-size: 14px;">big tasks</p>
+               </span>
+            </div>
+            
+        </div>
+        <div class="card">
+            <h3 style="text-align: center; padding-left: 0;" style="text-align: center; padding-left: 0;" class="cd-hdg">
+                Open tasks
+            </h3>
+            <div class="total-tasks">6</div>
+            <div class="detailed-task-cont">
+               <span class="detailed-task" >
+                3 <br><p style="font-size: 14px;">small tasks</p>
+               </span>
+               <div style="height: 40px;" class="divider"></div>
+               <span class="detailed-task" >
+                3 <br><p style="font-size: 14px;">big tasks</p>
+               </span>
+            </div>
+            
+        </div><div class="card">
+            <h3 style="text-align: center; padding-left: 0;" class="cd-hdg">
+                Overdue tasks
+            </h3>
+            <div class="total-tasks">12</div>
+            <div class="detailed-task-cont">
+               <span class="detailed-task" >
+                10 <br><p style="font-size: 14px;">small tasks</p>
+               </span>
+               <div style="height: 40px;" class="divider"></div>
+               <span class="detailed-task" >
+                2 <br><p style="font-size: 14px;">big tasks</p>
+               </span>
+            </div>
+            
+        </div><div class="card">
+            <h3 style="text-align: center; padding-left: 0;" class="cd-hdg">
+                Tasks on hold
+            </h3>
+            <div class="total-tasks">5</div>
+            <div class="detailed-task-cont">
+               <span class="detailed-task" >
+                3 <br><p style="font-size: 14px;">small tasks</p>
+               </span>
+               <div style="height: 40px;" class="divider"></div>
+               <span class="detailed-task" >
+                2 <br><p style="font-size: 14px;">big tasks</p>
+               </span>
+            </div>
+            
+        </div>
+    </div>
+    <div style="height: 300px;" class="section three">
+        <div class="card">
+            <h3 style="text-align: center; padding-left: 0;" style="text-align: center; padding-left: 0;" class="cd-hdg">
+                Team productivity rating
+            </h3>
+        </div>
+        <div style="height: 300px;" class="card">
+            <h3 style="text-align: center; padding-left: 0;" style="text-align: center; padding-left: 0;" class="cd-hdg">
+                Team capacity
+            </h3>
+        </div>
+        <div style="height: 300px;" class="card">
+            <h3 style="text-align: center; padding-left: 0;" style="text-align: center; padding-left: 0;" class="cd-hdg">
+                overdue management
+            </h3>
+        </div>
+    </div>
+    <button class="pry-btn" id="primary-button"> <img src="./assets/plus.svg" alt=""> Create Task</button>
+    </div>
+    
+    <div id="mod" class="modal-bg">
+        <div class="modal">
+            <div class="modal-content">
+            <ul >
+                <select style="padding-left: 0;" id="dropdown">
+                    <option value="option1" selected>Project one</option>
+                    <option value="option2">project two</option>
+                    <option value="option3" >project three</option>
+                    <option value="option4">project four</option>
+                </select>
+            </ul>
+
+            <div class="cards-container">
+                <div class="hist-card">
+                    <h4 class="tsk-title">User testing </h4>
+                    <p class="tsk-update">Lorem ipsum dolor sit ipsu lorem sit dolor ipsum</p>
+                    <img src="./assets/repeat.svg" alt="">
+                </div>
+                <div class="hist-card">
+                    <h4 class="tsk-title">CTA action </h4>
+                    <p class="tsk-update">Lorem ipsum dolor sit ipsu lorem sit dolor ipsum</p>
+                    <img src="./assets/repeat.svg" alt="">
+                </div><div class="hist-card">
+                    <h4 class="tsk-title">Home page refresh </h4>
+                    <p class="tsk-update">Lorem ipsum dolor sit ipsu lorem sit dolor ipsum</p>
+                    <img src="./assets/repeat.svg" alt="">
+                </div><div class="hist-card">
+                    <h4 class="tsk-title">research </h4>
+                    <p class="tsk-update">Lorem ipsum dolor sit ipsu lorem sit dolor ipsum</p>
+                    <img src="./assets/repeat.svg" alt="">
+
+                </div>
+                <div class="hist-card">
+                    <h4 class="tsk-title">ananlysis </h4>
+                    <p class="tsk-update">Lorem ipsum dolor sit ipsu lorem sit dolor ipsum</p>
+                    <img src="./assets/repeat.svg" alt="">
+
+                
+                </div>
+            </div>
+            <h3 style="padding-left: 0;" class="cd-hdg">
+                Priority task status
+            </h3>
+
+            <form action="">
+                <label class="input-title" for="#task-title">Task title</label>
+                <input type="text" class="input" name="" id="task-title">
+
+                <label class="input-title" for="#task-disc">Task Discription</label>
+                <input  type="text" class="input" name="" id="task-disc">
+
+                <label class="input-title" for="#assignee">Task Discription</label>
+                <div class="input"  id="assignee">
+                    <img style="position: absolute; top: -15px; right: -15px;"  src="./assets/add icon (1).svg" alt="">
+                    <img style="width: 40px;" src="./assets/Users.svg" alt="">
+                </div>
+
+                <label class="input-title" for="#task-title">Duration</label>
+                <div class="two-inputs">
+                <div class="input "  id="">
+                    <div class="duration">
+                   <p class="sel-label">Start date</p>
+                   <div class="sel-date">
+                    <p class="sel-text">Today</p>
+                        <button class="sel-button"> <img src="./assets/CalendarDots.svg" alt=""></button>
+                    </div>
+                    <div class="duration">
+                        <p class="sel-label">Time</p>
+                        <div class="sel-date">
+                         <p class="sel-text">Now</p>
+                             <button class="sel-button"> <img src="./assets/Clock.svg" alt=""></button>
+                         </div>
+                </div>
+                </div>
+                </div>
+                <div class="input "  id="">
+                    <div class="duration">
+                   <p class="sel-label">End date</p>
+                   <div class="sel-date">
+                    <p class="sel-text">Today</p>
+                        <button class="sel-button"> <img src="./assets/CalendarDots.svg" alt=""></button>
+                    </div>
+                    <div class="duration">
+                        <p class="sel-label">Time</p>
+                        <div class="sel-date">
+                         <p class="sel-text">EOD</p>
+                             <button class="sel-button"> <img src="./assets/Clock.svg" alt=""></button>
+                         </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <label class="input-title" for="#Priority">Priority</label>
+                <div class=" input duration">
+                    <ul >
+                        <select class="tsk-priority" style="padding-left: 0;" id="dropdown">
+                            <option value="option1" selected>High prioirty</option>
+                            
+                        </select>
+                    </ul>
+                </div>
+                <label class="input-title" for="#Priority">Update Report Interval</label>
+                <div class=" input duration">
+                    <ul >
+                        <select class="tsk-priority" style="padding-left: 0;" id="dropdown">
+                            <option value="option1" selected>Once a day</option>
+                            
+                        </select>
+                    </ul>
+                </div>
+                <label class="input-title" for="#task-disc">Attach files</label>
+                <input  type="text" class="input" name="" id="task-disc">
+            </form>
+        </div>
+
+    <div  class="button-container">
+        <button class="cancel button" id="Cancle">Cancle</button>
+        <button class="pry button"> Create Task</button>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="./task.js"></script>
+</html>
