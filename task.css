@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: Poppins, sans-serif;
     background-color: rgba(247, 247, 247, 1);
-    /* overflow: hidden; */
 }
 *{
     margin: 0;
@@ -23,12 +22,9 @@ body {
 
 .sidebar {
     width: 360px;
-    /* height: 500px; */
     background-color: #ffffff;
     color: #fff;
-    /* overflow: hidden; */
     position: sticky;
-    /* display: flex; */
     top: 0px;
     bottom: 0;
     
@@ -186,6 +182,7 @@ select option:hover {
 .tsk{
     flex-grow: 1;
     padding: 20px;
+    min-width: 250px;
 }
 .divider{
     width: 1px;
@@ -335,7 +332,6 @@ td > img{
     position: fixed;
     top: 0;
     left: 0;
-    /* display: block; */
     width: 100%;
     height: 100%;
     background-color: rgba(36, 36, 36, 0.4);
@@ -363,13 +359,18 @@ td > img{
 .cards-container{
     display: flex;
     gap: 20px;
-    padding: 10px 00px ;
+    padding: 10px 0px ;
+    overflow-x: scroll ;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+
 }
 .hist-card{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07) ;
     padding: 20px 20px ;
     border-radius: 5px;
     position: relative;
+    min-width: 250px;
 }
 .hist-card > img{
     position: absolute;
@@ -399,7 +400,14 @@ form{
     display: flex;
     align-items: center;
 }
+.attach{
+    border: 1px dotted #C3C3C3;
+    padding: 30px 0px;
+}
+.attach> img{
+    margin: auto;
 
+}
 #task-disc{
     height: 150px;
 }
@@ -421,7 +429,6 @@ form{
     display: flex;
     align-items: center;
     padding: 0 20px;
-    /* flex-wrap: wrap; */
     gap: 20px;
     width: fit-content;
 
@@ -471,11 +478,9 @@ form{
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.05);
 }
 .button{
-    /* background-color: #653CDC; */
     width: 200px;
     height: 50px;
     color: #555555;
-    /* position: absolute; */
     bottom: 40px;
     right: 80px;
     display: flex;
@@ -487,7 +492,6 @@ form{
     font-size: 20px;
     font-family : poppins,sans-serif;
     margin: 20px;
-    /* box-shadow: 2px 2px 10px #505050 ; */
 }
 .pry{
     background-color: #653CDC;
@@ -507,7 +511,6 @@ form{
 .mytask-cont{
     position: relative;
     background-color: #FFF;
-    /* padding: 20px; */
 }
 .tsk.sel{
     background-color: #F8F8F8;
@@ -519,15 +522,21 @@ form{
 }
 .tasks.mine > .tsk{
     border: 1px solid #efefef;
-    overflow: hidden;
+}
+.tasks.mine{
+    display: flex;
+    overflow: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    
 }
 .mine{
+    width: 1150px;
     margin: 10px 20px;
 }
 
 .task-detail{
     margin: 20px;
-    /* padding: 20px; */
     background-color: #F8F8F8;
     border-radius: 8px;
     position: relative;
@@ -623,7 +632,6 @@ form{
 .update-text-cont{
     display: flex;
     gap: 110px;
-    /* padding-top: 0; */
 }
 .update-text {
     color: #A5A4A4;
